@@ -22,11 +22,13 @@ const handleClick = () => {
 };
 //这里实现了输入动态改变我们需要的数据
 const showword = ref(true);
-const items = ref([
+
+const items = reactive([
   { id: 1, text: "Item 1" },
   { id: 2, text: "Item 2" },
   { id: 3, text: "Item 3" },
 ]);
+const item1s = reactive([4, 5, 6,7]);
 </script>
 
 
@@ -64,12 +66,19 @@ const items = ref([
     <button v-on:click="showword = !showword">显示/隐藏</button>
   </div>
   <div>
-      <li v-for="item in items" :key="item.id">
-        {{ item.text}}
-      </li>
+    <li v-for="item in items" :key="item.id">
+      {{ item.text }}
+    </li>
   </div>
   <div v-for="item in items" :key="item.id">
-        {{ item.text}}
+    {{ item.text }}
+  </div>
+  <div>
+    <ul>
+      <li v-for="item in item1s" :key="item">
+        {{ item }}
+      </li>
+    </ul>
   </div>
 </template>
 

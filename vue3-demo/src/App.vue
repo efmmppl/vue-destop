@@ -1,6 +1,10 @@
 <script setup>
     // import Demo from './views/01-demotest/Demo.vue'
-    import Demo from './views/02-template-syntax/Demo.vue';
+    // import Demo from './views/02-template-syntax/Demo.vue';
+    // import Demo from './views/03-response/Demo.vue';
+    // import Demo from './views/04-computation-attribute/Demo.vue';
+    // import Demo from './views/05-class-binding-style/Demo.vue';
+    import Demo from './views/05-class-binding-style/Demo1.vue';
     // import Demo from './views/wave/wave1218.vue'
 </script>
 
