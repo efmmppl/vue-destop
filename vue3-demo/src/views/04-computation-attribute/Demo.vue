@@ -22,6 +22,7 @@ const cart = reactive({
   ],
 });
 
+// computed计算属性函数
 const totalPrice = computed(() => {
   console.log("totalPrice");
   return cart.products.reduce((total, product) => {

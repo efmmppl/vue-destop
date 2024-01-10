@@ -24,7 +24,7 @@ const handleClick = (index) => {
 
 <style lang="css">
 .active {
-  color: red;
+  color: blue;
   font-size: 30px;
 }
 </style>
