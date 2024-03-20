@@ -2,7 +2,7 @@
   import { ref } from 'vue'
   const name = ref('Vue.js')
 
-  function greet(event) {
+  function changeN(event) {
     console.log(`Hello ${name.value}!`)
     // `event` 是 DOM 原生事件
     if (event) {
@@ -18,7 +18,7 @@
 <template>
   <div>
     {{name}}
-    <button @click="greet($event), changeName()">Greet</button>
+    <button @click="changeN($event), changeName()">changeN</button>
   </div>
 </template>
 
