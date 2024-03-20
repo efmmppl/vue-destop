@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cool Effect</title>
+    <style>
+        /* 定义样式 */
+        body {
+            background-color: #111111;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-top: 150px;
+            animation: fade 2s linear infinite;
+            cursor: pointer;
+        }
+
+        @keyframes fade {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .clicked {
+            animation: rotate 2s linear infinite;
+        }
+
+        .clicked.animate-faster {
+            animation-duration: 1s;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            var h1 = document.querySelector("h1");
+            h1.addEventListener("click", function() {
+                h1.classList.add("clicked");
+                setTimeout(function() {
+                    h1.classList.add("animate-faster");
+                }, 1000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Welcome to Cool Effect</h1>
+</body>
+</html>
