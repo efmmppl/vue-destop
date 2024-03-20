@@ -7,8 +7,9 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  
   publicPath: './src',
-  base: './src',
+  base: '/vue-destop/',
   plugins: [
     vue(),
   ],
